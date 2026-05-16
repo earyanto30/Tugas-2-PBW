@@ -96,9 +96,9 @@
                         <td v-text="item.qty"></td>
                         <td v-text="item.safety"></td>
                         <td>
-                            <span v-if="statusStok(item) === 'kosong'">Kosong</span>
-                            <span v-else-if="statusStok(item) === 'menipis'">Menipis</span>
-                            <span v-else>Aman</span>
+                            <span v-if="statusStok(item) === 'kosong'" style="color: red; font-weight: bold;">Kosong</span>
+                            <span v-else-if="statusStok(item) === 'menipis'" style="color: #c49a00; font-weight: bold;">Menipis</span>
+                            <span v-else style="color: green; font-weight: bold;">Aman</span>
                         </td>
                         <td v-html="item.catatanHTML"></td>
                         <td><button class="btn btn-primary" @click="startEdit(item)">Edit</button></td>

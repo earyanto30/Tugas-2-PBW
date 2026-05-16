@@ -39,7 +39,7 @@ function initStokApp(seedData) {
   },
 
   computed: {
-    // produce data buat list option di kategori
+    // produce data buat list upbjj option di kategori
     kategoriOptions() {
       if (!this.filters.upbjj) {
         return this.kategoriList;
@@ -73,7 +73,7 @@ function initStokApp(seedData) {
   },
 
   watch: {
-    // listen ke option kategori 
+    // listen ke option kategori upbjj
     "filters.upbjj"() {
       this.filters.kategori = "";
     },
